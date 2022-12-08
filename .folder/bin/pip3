@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/evgenijmamaev/Desktop/Geek Brains - разработчик/Auto_edit-1/.folder/bin/python3" "$0" "$@"
+'''exec' "/Users/evgenijmamaev/Desktop/Geek Brains - разработчик/Auto_edit-1/.folder/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
