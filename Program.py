@@ -1,6 +1,6 @@
 import pandas as pd
-from pathlib import *
-from easygui import *
+import pathlib as pl
+import easygui as eg
 
 def transform_MD(MD):
     MD = '-'+MD
@@ -21,8 +21,8 @@ msg = "Уважаемый пользователь! \n \n \
     добавляя впереди чисел столбца 'MD' знак '-'. \n \n \
     Выберите файлы для редактирования."
 title = "Выбор файлов для редактирования"
-txt_files = list(Path.cwd().glob('*.txt'))
-fieldValues = multchoicebox(msg,title, txt_files)
+txt_files = list(pl.Path.cwd().glob('*.txt'))
+fieldValues = eg.multchoicebox(msg,title, txt_files)
 
 for i in range(len(txt_files)):
     transform_file()
